@@ -22,7 +22,6 @@ body {
 
 [class*="col-"] {
     float: left;
-    padding: 15px;
     border: 1px solid grey;
 }
 
@@ -51,10 +50,10 @@ p {
 button {
     border: none;
     color: darkslategrey;
-    padding: 10% 30%;
+    padding: 1em 2em;
     text-align: center;
-    font-size: 24px;
-    margin-bottom: 3%;
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
 }
 
 h5 {
@@ -73,6 +72,7 @@ footer {
     background-color: #2f4f4f;
     color: #f5f5f5;
     bottom: 5%;
+    margin: 0 auto;
 }
 
 @media only screen and (max-width: 768px) {
