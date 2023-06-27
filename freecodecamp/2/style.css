@@ -19,12 +19,31 @@ h1 {
 }
 
 /*Layout*/
+
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+}
 header {
-    text-align: center;
     background-color: #f8f8f8;
     padding: 2em 0;
 }
 
+@media (max-width: 675px) {
+    .container-nav {
+        flex-direction: column;
+    }
+    header {
+        text-align: center;
+    }
+}
+ 
 /*Navigation*/
 nav ul {
     list-style: none;
@@ -33,7 +52,7 @@ nav ul {
     padding: 0;
 }
 nav li {
-    margin: 0 1em;
+    margin-left: 2em;
 }
 
 nav a {
@@ -54,4 +73,14 @@ nav a:focus {
 
 .current-page:hover {
     color: #707070;
+}
+
+@media (max-width: 675px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav li {
+        margin: 0.5em 0;
+    }
 }
